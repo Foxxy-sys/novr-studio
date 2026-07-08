@@ -1,0 +1,39 @@
+/* ==========================================================================
+   NOVR STUDIO — RESPONSIVE STYLESHEET
+   ========================================================================== */
+
+@media (hover:none), (max-width:900px){
+  .cursor{ display:none; }
+}
+
+@media (max-width:1080px){
+  .work-item{ grid-template-columns:50px 1fr 90px 24px; }
+  .work-cat{ display:none; }
+}
+
+@media (max-width:900px){
+  .wrap{ padding:0 24px; }
+  .nav-links{ display:none; }
+  .burger{ display:flex; }
+
+  section{ padding:100px 0; }
+  .section-head{ margin-bottom:56px; }
+  .scroll-cue{ left:24px; bottom:32px; }
+
+  .work-item{ grid-template-columns:36px 1fr 24px; gap:16px; }
+  .work-year, .work-soon{ display:none; }
+  .work-item .work-preview{ display:none; }
+
+  .service-item{ padding:28px 0; }
+
+  .cs-grid{ grid-template-columns:1fr; gap:32px; }
+  .cs-gallery{ grid-template-columns:1fr; }
+  .cs-meta{ gap:32px; }
+  .footer-top{ gap:32px; }
+}
+
+@media (max-width:600px){
+  .hero-actions{ flex-direction:column; align-items:flex-start; gap:18px; }
+  .cta-inner .btn{ width:100%; justify-content:center; }
+  .cs-nav-project{ flex-direction:column; align-items:flex-start; gap:24px; }
+}
