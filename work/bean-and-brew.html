@@ -9,7 +9,7 @@
 <link rel="icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -17,7 +17,7 @@
 <body>
 
 <div class="grain"></div>
-<div class="cursor" id="cursor"></div>
+<div class="cursor" id="cursor"><span class="cursor-label" id="cursorLabel"></span></div>
 
 <header id="header" class="scrolled">
   <div class="wrap">
@@ -45,6 +45,7 @@
 
 <!-- ============ CASE STUDY HERO ============ -->
 <section class="cs-hero">
+  <div class="cs-bg-word" id="heroWord">BEAN<br>BREW</div>
   <div class="wrap">
     <a href="../index.html#work" class="cs-back">← Back to Work</a>
     <h1 class="serif">Bean &amp; Brew</h1>
@@ -69,12 +70,22 @@
   </div>
 </section>
 
+<!-- ============ PROJECT OVERVIEW (STATS) ============ -->
+<div class="cs-stats">
+  <div class="reveal"><div class="cs-stat-val">1</div><div class="cs-stat-tag">Weeks</div></div>
+  <div class="reveal"><div class="cs-stat-val">2</div><div class="cs-stat-tag">Page</div></div>
+  <div class="reveal"><div class="cs-stat-val">88</div><div class="cs-stat-tag">Lighthouse</div></div>
+  <div class="reveal"><div class="cs-stat-val">100</div><div class="cs-stat-tag">SEO</div></div>
+  <div class="reveal"><div class="cs-stat-val">✓</div><div class="cs-stat-tag">Responsive</div></div>
+  <div class="reveal"><div class="cs-stat-val">Vercel</div><div class="cs-stat-tag">Hosting</div></div>
+</div>
+
 <!-- ============ CHALLENGE ============ -->
 <section class="cs-section">
   <div class="wrap cs-grid">
     <div>
       <span class="cs-label">Challenge</span>
-      <h2 class="serif">A warm brand, lost online.</h2>
+      <h2 class="serif">A warm coffee brand,<br>lost online.</h2>
     </div>
     <div class="cs-body">
       <p>Bean &amp; Brew had a loyal following in-store, but their online presence undersold the experience. The existing site was templated, slow, and gave visitors no reason to choose them over a chain coffee shop down the street.</p>
@@ -88,7 +99,7 @@
   <div class="wrap cs-grid">
     <div>
       <span class="cs-label">Solution</span>
-      <h2 class="serif">Cream, brown, and restraint.</h2>
+      <h2 class="serif">Cream, brown,<br>and restraint.</h2>
     </div>
     <div class="cs-body">
       <p>We built a single-page experience anchored around a cream-and-brown palette, generous whitespace, and a strong editorial type pairing. Every section earns its place — no filler stock photography, no generic icon grids.</p>
@@ -97,18 +108,20 @@
   </div>
 </section>
 
-<!-- ============ DESIGN PROCESS ============ -->
+<!-- ============ WEBSITE PREVIEW ============ -->
 <section class="cs-section">
-  <div class="wrap cs-grid">
-    <div>
-      <span class="cs-label">Design Process</span>
-      <h2 class="serif">Discover. Design. Develop. Launch.</h2>
-    </div>
-    <div class="cs-body">
-      <p><strong>Discover</strong> — a short working session with the owners to understand the in-store experience and translate it into digital cues.</p>
-      <p><strong>Design</strong> — a warm, cream-based palette and an editorial layout tested against real menu content, not lorem ipsum.</p>
-      <p><strong>Develop</strong> — a lightweight, dependency-free build focused on load speed and mobile performance.</p>
-      <p><strong>Launch</strong> — deployed with basic SEO and analytics in place from day one.</p>
+  <div class="wrap">
+    <span class="cs-label reveal">Website Preview</span>
+    <h2 class="serif reveal" style="margin:14px 0 40px;">The result, in full.</h2>
+    <div class="cs-preview reveal">
+      <div class="browser-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="browser-url">beanandbrew.studio</span>
+      </div>
+      <iframe
+        src="https://bean-brew-coffee.vercel.app"
+        loading="lazy">
+      </iframe>
     </div>
   </div>
 </section>
@@ -119,9 +132,41 @@
     <span class="cs-label reveal">Gallery</span>
     <h2 class="serif reveal" style="margin:14px 0 48px;">A closer look.</h2>
     <div class="cs-gallery">
-      <img class="full reveal" src="../assets/images/projects/bean-and-brew.jpg" alt="Bean & Brew homepage preview">
-      <img class="reveal" src="../assets/images/projects/bean-and-brew.jpg" alt="Bean & Brew menu section">
-      <img class="reveal" src="../assets/images/projects/bean-and-brew.jpg" alt="Bean & Brew story section">
+      <img class="g-full reveal" src="../assets/images/projects/bean-n-brew.png" alt="Bean & Brew homepage full view">
+      <img class="reveal" src="../assets/images/projects/bean-n-brew-menu.png" alt="Bean & Brew menu detail">
+      <img class="reveal" src="../assets/images/projects/bean-n-brew-about.png" alt="Bean & Brew about detail">
+      <img class="g-full reveal" src="../assets/images/projects/bean-n-brew-gallery.png" alt="Bean & Brew gallery section full view">
+      <img class="reveal" src="../assets/images/projects/bean-n-brew-testimonials.png" alt="Bean & Brew testimonials detail">
+      <img class="reveal" src="../assets/images/projects/bean-n-brew-footer.png" alt="Bean & Brew footer detail">
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESIGN PROCESS ============ -->
+<section class="cs-section">
+  <div class="wrap">
+    <span class="cs-label reveal">Process</span>
+    <h2 class="serif reveal" style="margin:14px 0 56px;">How this project moved from idea to launch.</h2>
+    <div class="process-list">
+      <div class="process-item reveal">
+        <span class="process-num">01</span>
+        <h3 class="serif">Discover</h3>
+      </div>
+      <span class="process-arrow">↓</span>
+      <div class="process-item reveal">
+        <span class="process-num">02</span>
+        <h3 class="serif">Design</h3>
+      </div>
+      <span class="process-arrow">↓</span>
+      <div class="process-item reveal">
+        <span class="process-num">03</span>
+        <h3 class="serif">Develop</h3>
+      </div>
+      <span class="process-arrow">↓</span>
+      <div class="process-item reveal">
+        <span class="process-num">04</span>
+        <h3 class="serif">Launch</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -131,7 +176,7 @@
   <div class="wrap cs-grid">
     <div>
       <span class="cs-label">Tech Stack</span>
-      <h2 class="serif">Built lean, on purpose.</h2>
+      <h2 class="serif">Built lean,<br>on purpose.</h2>
     </div>
     <div class="cs-body">
       <div class="cs-stack">
@@ -140,6 +185,32 @@
         <span>JavaScript</span>
         <span>Google Fonts</span>
         <span>Netlify Hosting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERFORMANCE ============ -->
+<section class="cs-section">
+  <div class="wrap">
+    <span class="cs-label reveal">Performance</span>
+    <h2 class="serif reveal" style="margin:14px 0 56px;">Fast by default.</h2>
+    <div class="score-grid">
+      <div class="score-item reveal">
+        <div class="score-circle" style="--pct:88;"><span>88</span></div>
+        <div class="score-label">Performance</div>
+      </div>
+      <div class="score-item reveal">
+        <div class="score-circle" style="--pct:100;"><span>100</span></div>
+        <div class="score-label">SEO</div>
+      </div>
+      <div class="score-item reveal">
+        <div class="score-circle" style="--pct:100;"><span>100</span></div>
+        <div class="score-label">Best Practice</div>
+      </div>
+      <div class="score-item reveal">
+        <div class="score-circle" style="--pct:91;"><span>91</span></div>
+        <div class="score-label">Accessibility</div>
       </div>
     </div>
   </div>
@@ -155,8 +226,8 @@
     <div class="cs-body">
       <p>The site went live in Q1 2026. It's fast, responsive, and gives Bean &amp; Brew a home online that matches the one they built in person.</p>
       <div class="cs-links" style="margin-top:28px;">
-        <a href="#" class="btn" target="_blank" rel="noopener">Live Demo ↗</a>
-        <a href="#" class="btn btn-ghost" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a href="https://bean-brew-coffee.vercel.app" class="btn" target="_blank" rel="noopener"><span>↗</span> Live Website</a>
+        <a href="https://foxxy-sys.github.io/bean-brew-coffee/" class="btn btn-ghost" target="_blank" rel="noopener"><span>&lt;/&gt;</span> GitHub Repository</a>
       </div>
     </div>
   </div>
@@ -170,10 +241,23 @@
   </div>
 </div>
 
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap cta-inner">
+    <span class="section-tag reveal">Have A Project?</span>
+    <h2 class="reveal">Let's build something<br>worth <em>remembering.</em></h2>
+    <a href="../index.html#contact" class="btn reveal">Start Project</a>
+  </div>
+</section>
+
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
     <div class="footer-top">
+      <div class="footer-col">
+        <span class="label">NOVR Studio</span>
+        <p>Independent creative studio designing premium websites, brands, and digital experiences.</p>
+      </div>
       <div class="footer-col">
         <span class="label">Studio</span>
         <a href="../index.html#work">Work</a>

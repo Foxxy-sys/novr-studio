@@ -20,9 +20,15 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
+<div id="loader">
+  <div class="loader-content">
+      <h1>NOVR</h1>
+      <span>Independent Creative Studio</span>
+  </div>
+</div>
 
 <div class="grain"></div>
-<div class="cursor" id="cursor"></div>
+<div class="cursor" id="cursor"><span class="cursor-label" id="cursorLabel"></span></div>
 
 <header id="header">
   <div class="wrap">
@@ -83,9 +89,11 @@
         <span class="work-index">01</span>
         <span class="work-title serif">Bean &amp; Brew</span>
         <span class="work-cat">Coffee Shop</span>
-        <span class="work-year">2026</span>
-        <span class="work-arrow">↗</span>
-        <div class="work-preview"><img src="assets/images/projects/bean-and-brew.jpg" alt="Bean & Brew project preview"></div>
+        <span class="work-meta">
+          <span class="work-year">2026</span>
+          <span class="work-view">View Project →</span>
+        </span>
+        <div class="work-preview"><img src="assets/images/projects/bean-n-brew.png" alt="Bean & Brew project preview"></div>
       </div>
 
       <div class="work-item is-soon reveal">
@@ -118,11 +126,11 @@
     </div>
 
     <div class="service-list">
-      <div class="service-item reveal"><h3 class="serif">Website Design</h3><span class="service-arrow">↗</span></div>
-      <div class="service-item reveal"><h3 class="serif">Company Profile</h3><span class="service-arrow">↗</span></div>
-      <div class="service-item reveal"><h3 class="serif">Landing Page</h3><span class="service-arrow">↗</span></div>
-      <div class="service-item reveal"><h3 class="serif">Frontend Development</h3><span class="service-arrow">↗</span></div>
-      <div class="service-item reveal"><h3 class="serif">Responsive Design</h3><span class="service-arrow">↗</span></div>
+      <div class="service-item reveal"><h3 class="serif"><span>Website Design</span></h3><span class="service-arrow">→</span></div>
+      <div class="service-item reveal"><h3 class="serif"><span>Company Profile</span></h3><span class="service-arrow">→</span></div>
+      <div class="service-item reveal"><h3 class="serif"><span>Landing Page</span></h3><span class="service-arrow">→</span></div>
+      <div class="service-item reveal"><h3 class="serif"><span>Frontend Development</span></h3><span class="service-arrow">→</span></div>
+      <div class="service-item reveal"><h3 class="serif"><span>Responsive Design</span></h3><span class="service-arrow">→</span></div>
     </div>
   </div>
 </section>
@@ -165,9 +173,26 @@
 <section id="about">
   <div class="wrap">
     <span class="section-tag reveal">About</span>
-    <div class="about-inner reveal">
-      <p>NOVR Studio is an independent creative studio focused on building clean, modern, and memorable digital experiences.</p>
-      <div class="about-founder">Founded by <span>Marcel Adrian Yoel Salim.</span></div>
+    <div class="about-grid-layout">
+      <div class="about-inner reveal">
+        <p>NOVR Studio is an independent creative studio focused on building clean, modern, and memorable digital experiences.</p>
+        <div class="about-founder">Founded by <span>Marcel Adrian.</span></div>
+      </div>
+      <div class="reveal">
+        <ul class="about-meta">
+          <li><span class="label">Studio</span><span class="val">Independent Creative Studio</span></li>
+          <li><span class="label">Location</span><span class="val">Based in Indonesia</span></li>
+          <li><span class="label">Availability</span><span class="val">Available Worldwide</span></li>
+        </ul>
+        <div class="about-focus">
+          <span class="label">Focused On</span>
+          <div class="focus-tags">
+            <span>Website</span>
+            <span>Brand Identity</span>
+            <span>Digital Experience</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -195,6 +220,10 @@
 <footer>
   <div class="wrap">
     <div class="footer-top">
+      <div class="footer-col">
+        <span class="label">NOVR Studio</span>
+        <p>Independent creative studio designing premium websites, brands, and digital experiences.</p>
+      </div>
       <div class="footer-col">
         <span class="label">Studio</span>
         <a href="#work">Work</a>

@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- custom cursor ---------- */
   const cursor = document.getElementById('cursor');
+  const cursorLabel = document.getElementById('cursorLabel');
   if (cursor && matchMedia('(hover:hover)').matches) {
     let cx = 0, cy = 0, tx = 0, ty = 0;
     window.addEventListener('mousemove', (e) => {
@@ -65,9 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.top = cy + 'px';
       requestAnimationFrame(loop);
     })();
-    document.querySelectorAll('a, .work-item, .service-item, button').forEach(el => {
+
+    document.querySelectorAll('a, .service-item, button').forEach(el => {
       el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
       el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    document.querySelectorAll('.work-item.is-live').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        if (cursorLabel) cursorLabel.textContent = 'VIEW';
+        cursor.classList.add('label-visible');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('label-visible');
+      });
     });
   }
 
@@ -88,5 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = item.getAttribute('data-href');
     });
   });
+
+  /* ---------- loader ---------- */
+  const loader = document.getElementById("loader");
+  if(loader){
+      window.addEventListener("load",()=>{
+          setTimeout(()=>{
+              loader.classList.add("hide");
+          },1400);
+      });
+  }
 
 });
