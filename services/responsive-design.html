@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Design | NOVR Studio</title>
+<meta name="description" content="One website, every screen — by NOVR Studio.">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor" id="cursor"><span class="cursor-label" id="cursorLabel"></span></div>
+
+<header id="header" class="scrolled">
+  <div class="wrap">
+    <nav>
+      <a href="../index.html" class="logo">NOVR</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="cs-hero">
+  <div class="cs-bg-word" id="heroWord">RESPONSIVE</div>
+  <div class="wrap">
+    <a href="../index.html#services" class="cs-back">← Back to Services</a>
+    <h1 class="serif">Responsive Design</h1>
+    <p class="svc-sub">One website. Every screen.</p>
+  </div>
+</section>
+
+<!-- ============ WHY IT MATTERS ============ -->
+<section class="cs-section">
+  <div class="wrap cs-grid">
+    <div>
+      <span class="cs-label">Why It Matters</span>
+      <h2 class="serif">Most visitors<br>arrive on mobile.</h2>
+    </div>
+    <div class="cs-body">
+      <p>A site that only looks right on a laptop is a site that fails most of its visitors. Responsive design means every layout, image, and interaction adapts — not just shrinks — across devices.</p>
+      <p>It's not an add-on. It's built into the structure from the first wireframe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREVIEW ============ -->
+<section class="cs-section">
+  <div class="wrap">
+    <span class="cs-label reveal">Preview</span>
+    <h2 class="serif reveal" style="margin:14px 0 40px;">The same site, every size.</h2>
+    <div class="device-row">
+      <div class="device-col reveal">
+        <div class="device device-desktop"><img src="../assets/images/projects/bean-and-brew.jpg" alt="Desktop preview"></div>
+        <div class="device-label">Desktop</div>
+      </div>
+      <div class="device-col reveal">
+        <div class="device device-tablet"><img src="../assets/images/projects/bean-and-brew.jpg" alt="Tablet preview"></div>
+        <div class="device-label">Tablet</div>
+      </div>
+      <div class="device-col reveal">
+        <div class="device device-mobile"><img src="../assets/images/projects/bean-and-brew.jpg" alt="Mobile preview"></div>
+        <div class="device-label">Mobile</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERFORMANCE ============ -->
+<div class="cs-stats">
+  <div class="reveal"><div class="cs-stat-val">100%</div><div class="cs-stat-tag">Responsive</div></div>
+  <div class="reveal"><div class="cs-stat-val">3</div><div class="cs-stat-tag">Breakpoints</div></div>
+  <div class="reveal"><div class="cs-stat-val">✓</div><div class="cs-stat-tag">Touch Ready</div></div>
+  <div class="reveal"><div class="cs-stat-val">✓</div><div class="cs-stat-tag">Fluid Type</div></div>
+</div>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap cta-inner">
+    <span class="section-tag reveal">Responsive Design</span>
+    <h2 class="reveal">Let's make it<br>work <em>everywhere.</em></h2>
+    <a href="../index.html#contact" class="btn reveal">Start Project</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col"><span class="label">NOVR Studio</span><p>Independent creative studio designing premium websites, brands, and digital experiences.</p></div>
+      <div class="footer-col"><span class="label">Studio</span><a href="../index.html#work">Work</a><a href="../index.html#services">Services</a><a href="../index.html#contact">Contact</a></div>
+      <div class="footer-col"><span class="label">Social</span><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">GitHub</a><a href="#" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+  </div>
+  <div class="footer-word">NOVR</div>
+  <div class="wrap footer-bottom">
+    <span>©2026 NOVR Studio</span>
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

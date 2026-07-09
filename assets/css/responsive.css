@@ -41,6 +41,13 @@
   .cs-stats{ grid-template-columns:repeat(2, 1fr); }
   .cs-stats div:nth-child(3){ border-left:none; }
   .score-grid{ grid-template-columns:repeat(2, 1fr); gap:32px; }
+  .feature-grid{ grid-template-columns:1fr; }
+  .checklist{ grid-template-columns:1fr 1fr; }
+  .device-row{ gap:24px; }
+  .device-desktop{ max-width:100%; }
+  .device-tablet{ width:180px; }
+  .device-mobile{ width:110px; }
+  .benefit-grid{ grid-template-columns:1fr 1fr; }
 }
 
 @media (max-width:600px){

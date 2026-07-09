@@ -589,6 +589,80 @@ footer{
 .cs-nav-project a{ font-family:'Playfair Display', serif; font-size:clamp(26px,3.4vw,40px); transition:color .4s var(--ease); }
 .cs-nav-project a:hover{ color:var(--accent); }
 
+/* ==========================================================================
+   SERVICE DETAIL PAGES
+   ========================================================================== */
+.svc-sub{ margin-top:24px; color:var(--gray); font-size:18px; max-width:480px; font-weight:300; line-height:1.6; }
+
+.feature-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; }
+.feature-item{
+  display:flex; align-items:center; gap:14px;
+  padding:26px; border:1px solid var(--line); border-radius:8px;
+  transition:border-color .3s var(--ease);
+}
+.feature-item:hover{ border-color:var(--accent); }
+.feature-item .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+.feature-item span{ font-size:16px; }
+
+.checklist{ display:grid; grid-template-columns:repeat(3, 1fr); gap:0 24px; }
+.checklist div{
+  display:flex; align-items:center; gap:12px;
+  padding:18px 0; border-top:1px solid var(--line); font-size:15px;
+}
+.checklist .check{ color:var(--accent); font-size:15px; }
+
+.faq-list{ display:flex; flex-direction:column; }
+.faq-item{ border-top:1px solid var(--line); padding:26px 0; }
+.faq-list .faq-item:last-child{ border-bottom:1px solid var(--line); }
+.faq-item summary{
+  cursor:pointer; font-size:19px; font-family:'Playfair Display', serif;
+  list-style:none; display:flex; justify-content:space-between; align-items:center;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content:'+'; color:var(--accent); font-size:22px; margin-left:24px;
+  transition:transform .3s var(--ease); flex-shrink:0;
+}
+.faq-item[open] summary::after{ transform:rotate(45deg); }
+.faq-item p{ color:var(--gray); margin-top:16px; font-size:15px; line-height:1.75; font-weight:300; max-width:640px; }
+
+.device-row{ display:flex; align-items:flex-end; gap:40px; flex-wrap:wrap; justify-content:center; padding:20px 0 10px; }
+.device-col{ display:flex; flex-direction:column; align-items:center; }
+.device{ border-radius:10px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px rgba(0,0,0,0.4); }
+.device img{ width:100%; display:block; }
+.device-desktop{ width:100%; max-width:560px; }
+.device-tablet{ width:240px; }
+.device-mobile{ width:140px; }
+.device-label{ text-align:center; color:var(--gray); font-size:12px; letter-spacing:0.1em; text-transform:uppercase; margin-top:16px; }
+
+/* ---------- flow list (no numbers, conceptual journey) ---------- */
+.flow-list{ display:flex; flex-direction:column; align-items:center; gap:0; }
+.flow-item{
+  font-family:'Playfair Display', serif;
+  font-size:clamp(24px,3.2vw,38px);
+  text-align:center;
+  padding:18px 0;
+  color:var(--white);
+}
+.flow-item.is-stat{ font-size:clamp(52px,8vw,90px); color:var(--accent); padding-bottom:6px; }
+.flow-item.is-sentence{
+  font-family:'Inter', sans-serif;
+  font-weight:300; font-size:18px; color:var(--gray);
+  max-width:440px; padding:16px 0;
+}
+.flow-arrow{ color:var(--line); font-size:20px; margin:2px 0; }
+
+/* ---------- benefit grid (numbered feature cards) ---------- */
+.benefit-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:28px; }
+.benefit-item{
+  text-align:center; padding:36px 20px;
+  border:1px solid var(--line); border-radius:8px;
+  transition:border-color .3s var(--ease);
+}
+.benefit-item:hover{ border-color:var(--accent); }
+.benefit-num{ font-family:'Playfair Display', serif; color:var(--accent); font-size:26px; margin-bottom:14px; display:block; }
+.benefit-item .label{ font-size:15px; color:var(--white); }
+
 #loader{
     position:fixed;
     inset:0;
