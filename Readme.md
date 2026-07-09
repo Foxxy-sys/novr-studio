@@ -8,9 +8,7 @@ Built with HTML, CSS, and vanilla JavaScript. Lightweight, responsive, and craft
 
 ## Preview
 
-![NOVR Studio Preview](assets/images/preview.jpg)
-
-> Replace `preview.jpg` with your homepage screenshot.
+![NOVR Studio Preview](assets/images/novr-preview.png)
 
 ---
 
